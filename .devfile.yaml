@@ -11,4 +11,4 @@ components:
       cpuLimit: '4'
       env:
         - name: 'KUBEDOCK_ENABLED'
-          value: true
+          value: 'true'
