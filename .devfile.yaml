@@ -1,0 +1,14 @@
+schemaVersion: 2.2.0
+metadata:
+  name: dockerfile-kubedock
+components:
+  - name: dev-tooling
+    container:
+      image: quay.io/mloriedo/universal-developer-image:kubedock-wrapper
+      memoryRequest: 2G
+      memoryLimit: 8G
+      cpuRequest: '1'
+      cpuLimit: '4'
+      env:
+        - name: 'KUBEDOCK_ENABLED'
+          value: true
